@@ -208,6 +208,16 @@ html {
 .vs { text-align:center; }
 .vs-val { font-family:'DM Serif Display',serif; font-size:clamp(26px,3.2vw,40px); color:var(--accent); }
 .vs-lbl { font-size:11px; color:var(--text3); margin-top:3px; max-width:140px; }
+/* ── CREDIBILITY STRIP ── */
+.cred-strip { width:100%; max-width:1060px; margin-top:18px; }
+.cred-lbl { font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:var(--text3); margin-bottom:10px; text-align:left; }
+.cred-row { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.cred-c { background:var(--bg3); border:1px solid var(--border); border-radius:13px; padding:14px 16px; display:flex; align-items:flex-start; gap:10px; transition:border-color 0.3s; }
+.cred-c:hover { border-color:rgba(134,239,172,0.28); }
+.cred-ic { font-size:17px; flex-shrink:0; margin-top:1px; }
+.cred-tx { display:flex; flex-direction:column; gap:3px; }
+.cred-tx strong { font-size:12px; font-weight:500; color:var(--text); }
+.cred-tx span { font-size:11px; color:var(--text2); line-height:1.5; }
 </style>
 </head>
 <body>
@@ -473,10 +483,31 @@ html {
       <div class="vdiv">→</div>
     </div>
 
-    <div class="vstats fade-in d3">
-      <div class="vs"><div class="vs-val">537M</div><div class="vs-lbl">personas con diabetes en el mundo</div></div>
-      <div class="vs"><div class="vs-val">1/4</div><div class="vs-lbl">desarrollar&aacute; una &uacute;lcera en el pie</div></div>
-      <div class="vs"><div class="vs-val">$96B</div><div class="vs-lbl">costo anual de tratamiento actual &mdash; que no cura</div></div>
+    <div class="cred-strip fade-in d3">
+      <div class="cred-lbl">Por qu&eacute; no es humo</div>
+      <div class="cred-row">
+        <div class="cred-c">
+          <div class="cred-ic">✅</div>
+          <div class="cred-tx">
+            <strong>PLGA ya tiene aprobaci&oacute;n FDA</strong>
+            <span>Est&aacute; en suturas, microesferas e implantes aprobados. No es un material especulativo &mdash; es infraestructura biol&oacute;gica probada.</span>
+          </div>
+        </div>
+        <div class="cred-c">
+          <div class="cred-ic">🌿</div>
+          <div class="cred-tx">
+            <strong>Yerba mate ya cicatriz&oacute;</strong>
+            <span>Publicado in vivo en 2025 (J Food Sci). No es una hip&oacute;tesis &mdash; es un resultado con modelo animal y datos reales.</span>
+          </div>
+        </div>
+        <div class="cred-c">
+          <div class="cred-ic">🏥</div>
+          <div class="cred-tx">
+            <strong>Ya llegaron al paciente antes</strong>
+            <span>Ensayo cl&iacute;nico Fase I/II completado con desmopresina (Investig New Drugs 2021). El equipo sabe c&oacute;mo cruzar del laboratorio a la cl&iacute;nica.</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="slide-num">06 / 07</div>
